@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
-.project_tools_list li {
+.project_tools_list dt {
   max-width: 100%;
   padding-right: 1rem;
   font-weight: 400;
@@ -95,7 +95,7 @@
     justify-content: space-between;
     margin-bottom: 4rem;
   }
-  .project_details h5 {
+  .project_details h4 {
     min-height: 3rem;
     margin-bottom: 01rem;
   }
@@ -122,7 +122,7 @@
     filter: opacity(0.3);
   }
 
-  .project_details h5,
+  .project_details h4,
   .project_tools_list {
     margin: 1rem 0 0;
   }

@@ -4,7 +4,6 @@
 This is a solution to the [Single-page developer portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 # Table of contents
-<!-- <center> -->
 
 ### [The challenge](#the-challenge)
 ###  [Screenshots](#screenshots) 
@@ -15,8 +14,6 @@ This is a solution to the [Single-page developer portfolio challenge on Frontend
 ### [Continued development](#continued-development)
 ### [Useful resources](#useful-resources)
 ### [Author](#author)
-
-<!-- </center> -->
 
 ## The challenge
 
@@ -33,10 +30,8 @@ Users should be able to:
 - [ ] **Bonus**: Hook the form up so it sends and stores the user's enquiry (you can use a spreadsheet or Airtable to save the enquiries)
 - [x] **Bonus**: Add your own details (image, skills, projects) to replace the ones in the design
 <!-- TO-Do => update project img's with view port resize -->
-<!-- TO-DO => See hover and focus states for all interactive elements on the page -->
 <!-- TO-DO => Hook the form up so it sends and stores the user's enquiry (you can use a spreadsheet or Airtable to save the enquiries) -->
-<!-- TO-DO => Accessibility -->
-<!-- TO-DO => Deploy -->
+
 
 ## Screenshots
 

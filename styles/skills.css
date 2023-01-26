@@ -2,7 +2,7 @@
 .container_skills {
   width: 100vw;
 }
-.container_skills ul {
+.container_skills dl {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@
     width: 100%;
     /* padding: 0 2rem; */
   }
-  .container_skills ul {
+  .container_skills dl {
     margin: 0 0 0 2rem;
     width: 100%;
     display: inline-flex;
@@ -63,7 +63,7 @@
   .container_skills {
     padding: 0 10rem;
   }
-  .container_skills ul {
+  .container_skills dl {
     margin: 0;
   }
 }

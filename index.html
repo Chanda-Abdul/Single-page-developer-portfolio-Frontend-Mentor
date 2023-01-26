@@ -66,7 +66,7 @@
 
             <div class="container_skills">
 
-                <ul id="skills"></ul>
+                <dl id="skills"></dl>
                 <div id="addRing2"></div>
 
             </div>
@@ -78,9 +78,9 @@
                        class="contact_link">
                         Contact me</a>
                 </div>
-                <ul id="projects">
+                <dl id="projects">
 
-                </ul>
+                </dl>
 
 
             </div>
@@ -94,8 +94,8 @@
                         </p>
                     </div>
                     <form novalidate>
-                        <div class="input_container">
 
+                        <div class="input_container input">
                             <input type="text"
                                    id="name"
                                    name="name"
@@ -106,15 +106,12 @@
                                   aria-live="polite"
                                   role="alert"
                                   class="input_error_name"></span>
-                        </div>
-                        <div>
-                            <span id="nameError"
+                            </span><span id="nameError"
                                   aria-live="polite"
                                   role="alert"
                                   class="input_error_name"></span>
                         </div>
-                        <div class="input-container">
-
+                        <div class="input_container">
                             <input type="text"
                                    placeholder="Email"
                                    id="email"
@@ -124,15 +121,15 @@
                                   aria-live="polite"
                                   role="alert"
                                   class="email_error_name"></span>
-                        </div>
-                        <div>
+
                             <span id="emailError"
                                   aria-live="polite"
                                   role="alert"
                                   class="input_error_email">
                             </span>
                         </div>
-                        <div class="input-container">
+
+                        <div class="textarea_container">
                             <textarea id="message"
                                       name="message"
                                       aria-label="message"
@@ -143,22 +140,20 @@
                                   aria-live="polite"
                                   role="alert"
                                   class="input_error_message"></span>
-                        </div>
-                        <div>
+
                             <span id="messageError"
                                   aria-live="polite"
                                   role="alert"
                                   class="message_error"></span>
-                        </div>
-
-                        <button type="submit"
-                                id="submit">Send message</button>
+                            <div>
+                                <button role="submit"
+                                        id="submit">Send message</button>
 
                     </form>
 
                 </div>
-                <div id="addRing3"></div>
-            </div>
+               
+            </div> <div id="addRing3"></div>
     </main>
     <footer class="footer">
         <nav>

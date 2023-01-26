@@ -114,15 +114,15 @@ projects.forEach((item) => {
   img.alt = item.project;
 
   /* Create project title */
-  let projectTitle = document.createElement('h5');
+  let projectTitle = document.createElement('h4');
   projectTitle.innerHTML = item.project;
 
   /* Create project tooling/tech list */
-  let projectTools = document.createElement('ul');
+  let projectTools = document.createElement('dl');
   projectTools.className = 'project_tools_list';
 
   item.tooling.forEach((tool) => {
-    let toolItem = document.createElement('li');
+    let toolItem = document.createElement('dt');
     toolItem.innerHTML = tool;
     projectTools.appendChild(toolItem);
   });

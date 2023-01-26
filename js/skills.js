@@ -18,8 +18,8 @@ const skills = [
   let skillsList = document.getElementById('skills');
   
   skills.forEach((item) => {
-    let li = document.createElement('li');
-    li.className = 'skill_detail'
+    let dt = document.createElement('dt');
+    dt.className = 'skill_detail'
     let itemTitle = document.createElement('p');
     
     itemTitle.className = 'skill';
@@ -27,8 +27,8 @@ const skills = [
     itemTitle.innerText = item.skill;
     subitem.className = 'level';
     subitem.innerText = item.level;
-    li.appendChild(itemTitle);
-    li.appendChild(subitem);
-    skillsList.appendChild(li);
+    dt.appendChild(itemTitle);
+    dt.appendChild(subitem);
+    skillsList.appendChild(dt);
    
   });

@@ -41,7 +41,7 @@ textarea[type='text']:placeholder-shown {
   font-size: 1rem;
   line-height: 1.625;
   color: var(--snow-white);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   border-bottom: 0.063rem solid var(--snow-white);
   border-style: hidden hidden groove;
 }
@@ -49,6 +49,7 @@ textarea {
   height: 7rem;
 }
 .container_contact button {
+  width: 100%;
   margin-top: 2rem;
   border: none;
   background: transparent;
@@ -57,15 +58,22 @@ textarea {
 .error {
   display: block;
   width: 100%;
-  height: 2rem;
   margin: 0;
   padding-left: 1.5rem;
   text-align: left;
   font-weight: 500;
   font-size: 0.8rem;
-  line-height: 1.5rem;
   align-items: center;
   color: var(--grapefruit-pulp);
+}
+.error_icon {
+  position: relative;
+  padding: 0.25rem 0.75rem;
+  color: var(--grapefruit-pulp);
+  border: 0.25px solid var(--grapefruit-pulp);
+  border-radius: 50%;
+  bottom: 2.5rem;
+  left: 40%;
 }
 input:valid,
 textarea.valid {
@@ -77,23 +85,28 @@ input.invalid,
 textarea.invalid {
   border-bottom: 0.063rem solid var(--grapefruit-pulp);
   background: transparent;
+  margin-bottom: 0;
 }
-.input-container {
+
+.input_container.input {
   position: relative;
+  top: 0;
+  right: 0;
+  height: 6rem;
 }
-.input-container span > svg {
-  position: absolute;
-  top: 1.5rem;
+.textarea_container {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 7rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-.input-container > input {
-  margin-right: 3rem;
-}
-
-.input-container * > svg {
-  currentcolor: var(--grapefruit-pulp);
-  stroke: var(--grapefruit-pulp);
-  fill: var(--grapefruit-pulp);
+.textarea_container > .error_icon {
+  position: relative;
+  bottom: 6.5rem;
+  left: 40%;
 }
 
 #addRing3 {
