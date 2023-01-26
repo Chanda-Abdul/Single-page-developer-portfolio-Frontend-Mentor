@@ -2,8 +2,8 @@
 const skills = [
     { skill: 'Angular', level: '1 Years Experience' },
     { skill: 'APIs', level: '4 Years Experience' },
-    // { skill: 'Accessibility', level: '4 Years Experience' },
-    // { skill: 'CSS', level: '4 Years Experience' },
+    { skill: 'Accessibility', level: '4 Years Experience' },
+    { skill: 'CSS', level: '4 Years Experience' },
     { skill: 'Express', level: '3 Years Experience' },
     { skill: 'GraphQL', level: '1 Years Experience' },
     // { skill: 'HTML', level: '4 Years Experience' },
@@ -19,9 +19,10 @@ const skills = [
   
   skills.forEach((item) => {
     let li = document.createElement('li');
+    li.className = 'skill_detail'
     let itemTitle = document.createElement('p');
     
-    itemTitle .className = 'skill';
+    itemTitle.className = 'skill';
     let subitem = document.createElement('p');
     itemTitle.innerText = item.skill;
     subitem.className = 'level';

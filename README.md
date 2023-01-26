@@ -82,8 +82,12 @@ const proudOfThisFunc = () => {
 ## Useful resources
 
 - [Building a portfolio website with HTML & CSS | Part 1](https://youtu.be/65GVcdESj3s) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#validating_forms_using_javascript) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#validating_forms_using_javascript) - This is an amazing article which hel
+- [CSS Compressor](https://youtu.be/65GVcdESj3s) - Use CSS Compressor to compress CSS to reduce CSS code size and make your website load faster. 
+- [CSS Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/) - A visual way to analyze the specificity of selectors in CSS.
 
+
+https://isellsoap.github.io/specificity-visualizer/
 
 ## Author
 

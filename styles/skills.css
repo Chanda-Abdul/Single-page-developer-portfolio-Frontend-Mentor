@@ -1,48 +1,43 @@
 /* skills */
 .container_skills {
   width: 100vw;
-  /* position: relative; */
 }
-ul#skills {
+.container_skills ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   margin: 0 1rem;
-  padding: 3rem 0 1rem 0;
-  border-top: 1.5px solid var(--silver-shadow);
-  border-bottom: 1.5px solid var(--silver-shadow);
+  padding: 3rem 0 1rem;
+  border-top: 0.094rem solid var(--silver-shadow);
+  border-bottom: 0.094rem solid var(--silver-shadow);
   font-size: 1.75rem;
   line-height: 2.25rem;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.006rem;
   font-weight: 700;
 }
-
 .skill {
   font-size: 2.5rem;
   line-height: 3rem;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.006rem;
   font-weight: 700;
   margin: 0.25rem;
 }
-
 .level {
   margin: 0.5rem;
   padding-bottom: 1.25rem;
-
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--silver-shadow);
 }
-
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   .container_skills {
     width: 100%;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
   }
-  ul#skills {
+  .container_skills ul {
     margin: 0 0 0 2rem;
     width: 100%;
     display: inline-flex;
@@ -50,14 +45,12 @@ ul#skills {
     flex-direction: row;
     border-bottom: none;
   }
-
-  ul#skills li {
-    width: 345px;
-    height: 98px;
+  .skill_detail {
+    width: 21.5rem;
+    height: 6.125rem;
     margin: 2rem 0;
     text-align: left;
   }
-
   .skills {
     text-transform: none;
     margin: 0;
@@ -66,21 +59,11 @@ ul#skills {
     letter-spacing: -0.1rem;
   }
 }
-
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 64em) {
   .container_skills {
     padding: 0 10rem;
   }
-  ul#skills {
+  .container_skills ul {
     margin: 0;
-    justify-content: space-between;
   }
-  /* 
-     10rem;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border-bottom: none;
-   */
 }
