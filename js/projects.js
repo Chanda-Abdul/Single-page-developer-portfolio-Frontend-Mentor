@@ -111,6 +111,7 @@ projects.forEach((item) => {
   let img = document.createElement('img');
   img.className = 'project_image';
   img.src = item.imageMobile;
+  img.alt = item.project;
 
   /* Create project title */
   let projectTitle = document.createElement('h5');
@@ -134,12 +135,14 @@ projects.forEach((item) => {
   let projectLink = document.createElement('a');
   projectLink.href = item.linkToProject;
   projectLink.innerHTML = 'View Project';
+  projectLink.setAttribute('aria-label', item.project)
   projectLinksList.appendChild(projectLink);
 
   /* Create project code link */
   let projectCodeLink = document.createElement('a');
   projectCodeLink.href = item.linkToCode;
   projectCodeLink.innerHTML = 'View Code';
+  projectCodeLink.setAttribute('aria-label', 'link to view project code')
   projectLinksList.appendChild(projectCodeLink);
 
   /* append thumbnail, title, tools, and links to project container */

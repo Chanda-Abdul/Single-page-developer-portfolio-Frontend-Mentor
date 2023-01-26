@@ -19,7 +19,9 @@ const skills = [
   
   skills.forEach((item) => {
     let li = document.createElement('li');
-    let itemTitle = document.createElement('h4');
+    let itemTitle = document.createElement('p');
+    
+    itemTitle .className = 'skill';
     let subitem = document.createElement('p');
     itemTitle.innerText = item.skill;
     subitem.className = 'level';

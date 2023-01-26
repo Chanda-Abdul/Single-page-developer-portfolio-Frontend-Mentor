@@ -1,4 +1,4 @@
-/*  data file to update social links and svg/icons */ 
+/*  data file to update social links and svg/icons */
 const links = [
   {
     linkTo: 'GitHub',
@@ -64,13 +64,14 @@ let listForSocialIconsinFooter = document.getElementById('links_footer');
 function appendListWithSocialIcons(elementToAppend) {
   /**
    * appends an HTML element with an svg wrapped anchor tag.
-   * @param {HTMLelement} elementToAppend 
+   * @param {HTMLelement} elementToAppend
    * where <a><svg></svg></a> will be inserted
    */
   links.forEach((item) => {
     let svg = renderLinkIcon(item);
     let a = document.createElement('a');
     a.href = item.link;
+    a.setAttribute('aria-label', item.linkTo);
     a.appendChild(svg);
     elementToAppend.appendChild(a);
   });

@@ -19,24 +19,28 @@ ul#skills {
   font-weight: 700;
 }
 
+.skill {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.1px;
+  font-weight: 700;
+  margin: 0.25rem;
+}
+
 .level {
   margin: 0.5rem;
   padding-bottom: 1.25rem;
-  /* padding: 0.25rem 0 1.25rem 0; */
+
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--silver-shadow);
 }
 
-
 @media (min-width: 600px) {
   .container_skills {
     width: 100%;
-   padding:  0 2rem ;
-    /* display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; */
+    padding: 0 2rem;
   }
   ul#skills {
     margin: 0 0 0 2rem;
@@ -50,17 +54,27 @@ ul#skills {
   ul#skills li {
     width: 345px;
     height: 98px;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
     text-align: left;
+  }
+
+  .skills {
+    text-transform: none;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.1rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
-  .container_skills{
+  .container_skills {
     padding: 0 10rem;
   }
-  ul#skills {margin: 0;
-  justify-content: space-between;}
+  ul#skills {
+    margin: 0;
+    justify-content: space-between;
+  }
   /* 
      10rem;
     width: 100%;

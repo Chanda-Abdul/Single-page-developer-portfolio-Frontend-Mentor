@@ -45,18 +45,18 @@
             <div class="container_hero">
                 <div class="intro">
                     <h2>Nice to meet you!
-                        <!-- <span> -->
-                            I'm
-                            <a
-                               href="https://www.npr.org/2022/07/28/1114196664/video-game-novel-tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin">Sadie
-                                Green.</a>
-                            <!-- </span> -->
+                    
+                        I'm
+                        <a
+                           href="https://www.npr.org/2022/07/28/1114196664/video-game-novel-tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin" aria-label="npr" target="_blank">Sadie
+                            Green.</a>
+                  
                     </h2>
                     <p>
                         Based in San Francisco, California, I'm a front-end developer passionate about
                         building accessible web apps that users love.
                     </p>
-                    <a href="#"
+                    <a href="#" aria-label="contact_by_email" target="_blank"
                        class="contact_link">Contact me</a>
                 </div>
             </div>
@@ -85,12 +85,15 @@
 
                 <div class="container_contact">
                     <div class="containter_contact_text">
-                    <h2>Contact</h2>
-                    <p>I would love to hear about your project and how I could help. Please
-                        fill in the form, and I’ll get back to you as soon as possible.
-                    </p></div>
+                        <h2>Contact</h2>
+                        <p>I would love to hear about your project and how I could help. Please
+                            fill in the form, and I’ll get back to you as soon as possible.
+                        </p>
+                    </div>
                     <form novalidate>
                         <div class="input-container">
+                            <label for="name"
+                                   hidden>name</label>
                             <input type="text"
                                    id="name"
                                    name="name"
@@ -108,6 +111,8 @@
                                   class="input_error_name"></span>
                         </div>
                         <div class="input-container">
+                            <label for="email"
+                                   hidden>email</label>
                             <input type="text"
                                    placeholder="Email"
                                    id="email"
@@ -125,6 +130,8 @@
                             </span>
                         </div>
                         <div class="input-container">
+                            <label for="message"
+                                   hidden>messgae</label>
                             <textarea id="message"
                                       name="message"
                                       type="text"
@@ -146,19 +153,21 @@
                                 id="submit">Send message</button>
 
                     </form>
-                  
-                </div>  <div id="addRing3"></div>
+
+                </div>
+                <div id="addRing3"></div>
             </div>
     </main>
     <footer class="footer">
         <nav>
-        <h1>sadiegreen</h1>
-        <div id="links_footer"></div></nav>
+            <h1>sadiegreen</h1>
+            <div id="links_footer"></div>
+        </nav>
     </footer>
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
-           target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Chanda Abdul</a>.
+        aria-label="frontendmentor" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#" aria-label="developer portfolio" target="_blank">Chanda Abdul</a>.
     </div>
 
     <script src="/js/data.js"
