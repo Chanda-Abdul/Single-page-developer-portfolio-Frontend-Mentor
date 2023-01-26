@@ -82,8 +82,6 @@ const proudOfThisFunc = () => {
 - [CSS Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/) - A visual way to analyze the specificity of selectors in CSS.
 
 
-https://isellsoap.github.io/specificity-visualizer/
-
 ## Author
 
 - Frontend Mentor - [@Chanda-Abdul](https://www.frontendmentor.io/profile/Chanda-Abdul)
