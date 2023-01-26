@@ -1,0 +1,312 @@
+/* Global Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@import 'global.css';
+@import 'skills.css';
+@import 'projects.css';
+@import 'contact_form.css';
+
+/* header */
+header {
+  height: 24rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  text-align: center;
+  width: 11rem;
+  height: 100%;
+  padding-top: 1.25rem;
+}
+nav h1 {
+  margin-top: 0;
+}
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#links_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+  padding: 0 0.5rem;
+}
+img {
+  max-width: 100%;
+}
+
+.profile_container {
+  margin: 0;
+  height: 10rem;
+  background: linear-gradient(
+    180deg,
+    var(--verified-black) 0.7%,
+    var(--verified-black) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 40%,
+    var(--snow-white) 100%
+  );
+}
+
+.profile {
+  margin-top: 0;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  width: 11rem;
+  height: 15.25rem;
+  object-fit: cover;
+  z-index: 1;
+}
+
+#addRing svg.rings {
+  position: relative;
+  object-fit: cover;
+  object-position: top right;
+  height: 8rem;
+  left: -22rem;
+  top: -27rem;
+  /* width: 33.5rem; */
+}
+#addRing {
+  /* TO-DO => this is the issue, crop this  */
+  width: 33.5rem;
+}
+
+#addRing,
+#addRing2,
+#addRing3 {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+}
+
+#addCircle {
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#addCircle svg.circle {
+  position: relative;
+  object-fit: cover;
+  width: 4rem;
+  height: 8rem;
+  left: 20rem;
+  bottom: 8rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+/* hero */
+.container_hero {
+  /* position: relative; */
+  padding: 0 0 5rem 0;
+  /* border-bottom: 1.5px solid var(--silver-shadow); */
+}
+
+.intro {
+  /* ,.container_skills, .container_projects .container_contact */
+  margin: auto 1rem;
+}
+
+/* footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: var(--verified-black);
+  width: 100%;
+  /* text-align: center; */
+  /* padding: 1rem 1rem 1rem 1rem; */
+}
+
+#links_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 153px;
+  margin-top: 0.5rem;
+
+  padding: 0 0.5rem;
+}
+.attribution {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.75rem;
+  background-color: var(--verified-black);
+  width: 100%;
+}
+.attribution a {
+  color: var(--mint-jelly);
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+  /* header*/
+  header {
+    height: 720px;
+  }
+
+  nav {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #addRing svg.rings {
+    left: -25rem;
+    top: -30rem;
+  }
+  #addRing {
+    /* TO-DO => this is the issue, crop this  */
+    width: 33.5rem;
+  }
+  .nav_bar {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_bar h1 {
+    width: 172px;
+    margin: 0;
+  }
+
+  .profile_container {
+    display: none;
+  }
+
+  .profile {
+    height: 100%;
+    position: absolute;
+    height: 720px;
+    width: 445px;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    object-position: top center;
+  }
+
+  .nav_bar #links_header {
+    width: 192px;
+    z-index: 2;
+  }
+
+  .container_hero {
+    position: absolute;
+    z-index: 1;
+    padding-bottom: 0;
+    height: 27.8rem;
+    width: 28rem;
+    left: 2rem;
+    top: 151px;
+    text-align: left;
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between; */
+    padding: auto;
+  }
+  #addCircle {
+    width: 100%;
+  }
+  #addCircle svg.circle {
+    left: 44.5rem;
+    bottom: 0rem;
+    z-index: 2;
+  }
+  .intro {
+    height: 27rem;
+    width: 425px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: auto;
+  }
+  .intro span,
+  .intro > a {
+    width: 545px;
+    display: inline-block;
+  }
+  .intro h2 {
+    padding-right: 1rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;
+    align-items: space-between; */
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  header {
+    padding: 2.5rem 10rem 2.5rem 10rem;
+  }
+  nav {
+    padding: 0;
+  }
+  .profile {
+    margin-right: 10rem;
+  }
+
+  .container_hero {
+    /* position: relative; */
+    left: 10rem;
+    padding: 0rem 10rem 2.5rem 0rem;
+    width: 709px;
+  }
+  .intro h2 {
+    margin-top: 0;
+    width: 709px;
+  }
+
+  footer {
+    padding: 0 10rem;
+  }
+
+  footer nav {
+    border-top: 1px solid var(--silver-shadow);
+    padding: 2rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer nav h1 {
+    width: 172px;
+  }
+}
